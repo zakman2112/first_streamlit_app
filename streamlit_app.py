@@ -28,6 +28,8 @@ streamlit.dataframe(fruits_to_show)
 
 #New section to display fruityvice api response
 import requests
+import snowflake.connector
+
 streamlit.header("Fruityvice Fruit Advice!")
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
